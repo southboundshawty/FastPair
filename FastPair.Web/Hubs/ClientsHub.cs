@@ -40,7 +40,7 @@ public class ClientsHub : Hub
 
                 if (code != null)
                 {
-                    connection?.Codes.Add(new ConnectionCode(code, DateTime.Now));
+                    connection?.Codes.Add(new ConnectionCode(code, DateTime.Now + TimeSpan.FromSeconds(MaxSessionExistTimeMinutes)));
                 }
             }
         }
@@ -79,8 +79,7 @@ public class ClientsHub : Hub
     {
         lock (Connections)
         {
-            Connections.ClearExpiredSessions(x => 
-                    DateTime.Now.Subtract(x.TimeIn).TotalMinutes >= MaxSessionExistTimeMinutes);
+            Connections.ClearExpiredSessions(x => x.ExpiredAt <= DateTime.Now);
         }
     }
 

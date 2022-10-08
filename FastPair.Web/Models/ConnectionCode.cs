@@ -1,3 +1,3 @@
 ﻿namespace FastPair.Web.Models;
 
-public record ConnectionCode(string Code, DateTime TimeIn);
+public record ConnectionCode(string Code, DateTime ExpiredAt);
