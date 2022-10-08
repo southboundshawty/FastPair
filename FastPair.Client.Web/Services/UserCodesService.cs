@@ -33,6 +33,6 @@ public class UserCodesService
             await _hubConnection.StartAsync();
         }
         
-        await _hubConnection.InvokeAsync("SendAdminCode", code);
+        await _hubConnection.InvokeAsync("SendClientCode", code);
     }
 }

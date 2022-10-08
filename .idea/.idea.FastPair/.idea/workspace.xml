@@ -11,16 +11,15 @@
     <projectFile profileName="IIS Express">FastPair.Admin.Web/FastPair.Admin.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FastPair.Web/TestController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Web/Properties/launchSettings.json" afterDir="false" />
+    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment="1223">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Web/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,9 +34,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d157616ef1fbdda4daf8fb213564bfb2e53397618686a4e78b80d15febc7b1/HubEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de7cca8bbad440a84863dc9a66814897f9b51cd9916dcdce4857992d5d492c/HashSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ee346d537adeab067e1a4abdffd52eee03a9351eae04852401b3ef1eecb5/EndpointRoutingApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FastPair.Web/Hubs/ClientsHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FastPair.Web/Models/Connection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FastPair.Web/Models/ConnectionCode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.FastPair.Client.Web">
+  <component name="RunManager" selected=".NET Launch Settings Profile.FastPair">
     <configuration name="FastPair.Admin" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -204,7 +203,7 @@
       <workItem from="1665231150797" duration="1535000" />
       <workItem from="1665238010062" duration="528000" />
       <workItem from="1665239005194" duration="386000" />
-      <workItem from="1665239445526" duration="8424000" />
+      <workItem from="1665239445526" duration="10545000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665231253044</created>
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665231940901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1223">
+      <created>1665248536479</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665248536479</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,23 +546,24 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="add expired dt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add expired dt" />
+    <MESSAGE value="1223" />
+    <option name="LAST_COMMIT_MESSAGE" value="1223" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs</url>
-          <line>35</line>
-          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Admin.Web\Services\UserCodesService.cs" initialLine="35" containingFunctionPresentation="method 'SendCode'">
+          <url>file://$PROJECT_DIR$/FastPair.Web/Hubs/ClientsHub.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Web\Hubs\ClientsHub.cs" initialLine="29" containingFunctionPresentation="method 'SendAdminCode'">
             <startOffsets>
-              <option value="983" />
+              <option value="778" />
             </startOffsets>
             <endOffsets>
-              <option value="1039" />
+              <option value="779" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

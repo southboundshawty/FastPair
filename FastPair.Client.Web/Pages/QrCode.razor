@@ -1,9 +1,11 @@
 ﻿@page "/qrcode"
 @using QRCoder
 @using System.Drawing.Imaging
+@using FastPair.Client.Web.Services
 @using SixLabors.ImageSharp
 @using SixLabors.ImageSharp.Formats.Png
-@using SixLabors.ImageSharp.Formats.Tga
+@using System.Data
+@inject UserCodesService UserCodesService
 
 <h3>QrCode</h3>
 
@@ -12,18 +14,24 @@
 @code {
     string se = "";
     
-    protected override void OnInitialized()
+    protected async override void OnInitialized()
     {
+        var code = new Random().Next(1111, 9999).ToString();
+        
         using var ms = new MemoryStream();
         var generator = new QRCodeGenerator();
-        var data = generator.CreateQrCode("sg", QRCodeGenerator.ECCLevel.H);
+        var data = generator.CreateQrCode($"http://192.168.253.226:5258/UserCodes?code={code}", QRCodeGenerator.ECCLevel.H);
         var t = new QRCode(data);
         var h = t.GetGraphic(20);
-        h.Save(ms, new PngEncoder());
+        await h.SaveAsync(ms, new PngEncoder());
         
         se = $"data:image/png;base64,{Convert.ToBase64String(ms.ToArray())}";
         
-        base.OnInitialized();
+        await UserCodesService.SendCode(code);
+
+        StateHasChanged();
+        
+        await base.OnInitializedAsync();
     }
 
 }
