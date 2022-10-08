@@ -1,0 +1,29 @@
+﻿@page "/qrcode"
+@using QRCoder
+@using System.Drawing.Imaging
+@using SixLabors.ImageSharp
+@using SixLabors.ImageSharp.Formats.Png
+@using SixLabors.ImageSharp.Formats.Tga
+
+<h3>QrCode</h3>
+
+<img width="128px" height="128px" src="@se"/>
+
+@code {
+    string se = "";
+    
+    protected override void OnInitialized()
+    {
+        using var ms = new MemoryStream();
+        var generator = new QRCodeGenerator();
+        var data = generator.CreateQrCode("sg", QRCodeGenerator.ECCLevel.H);
+        var t = new QRCode(data);
+        var h = t.GetGraphic(20);
+        h.Save(ms, new PngEncoder());
+        
+        se = $"data:image/png;base64,{Convert.ToBase64String(ms.ToArray())}";
+        
+        base.OnInitialized();
+    }
+
+}

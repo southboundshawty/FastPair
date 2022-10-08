@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastPair.Admin", "FastPair.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastPair.Client", "FastPair.Client\FastPair.Client.csproj", "{AD177D25-AD5C-4DE7-8729-8CEA96779FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastPair.Client.Web", "FastPair.Client.Web\FastPair.Client.Web.csproj", "{39AA1B3F-C3CC-47C5-94A3-811308002639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{AD177D25-AD5C-4DE7-8729-8CEA96779FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD177D25-AD5C-4DE7-8729-8CEA96779FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD177D25-AD5C-4DE7-8729-8CEA96779FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AA1B3F-C3CC-47C5-94A3-811308002639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AA1B3F-C3CC-47C5-94A3-811308002639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AA1B3F-C3CC-47C5-94A3-811308002639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AA1B3F-C3CC-47C5-94A3-811308002639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

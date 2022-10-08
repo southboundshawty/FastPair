@@ -4,18 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:56397",
-      "sslPort": 44384
+      "applicationUrl": "http://localhost:24393",
+      "sslPort": 44335
     }
   },
   "profiles": {
-    "FastPair": {
+    "FastPair.Admin.Web": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://192.168.253.226:5257",
-//      "applicationUrl": "https://192.168.253.226:7257;http://192.168.253.226:5257",
+      "applicationUrl": "https://localhost:7108;http://localhost:5108",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
