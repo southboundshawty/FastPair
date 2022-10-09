@@ -7,9 +7,7 @@ public class UserCodesService
 {
     public UserCodesService(IConfiguration configuration)
     {
-        _configuration = configuration;
-
-        var host = "http://192.168.253.226:5257";
+        const string host = "http://192.168.224.226:5259";
         
         _hubConnection = new HubConnectionBuilder()
             .WithUrl($"{host}/clients", options => 
@@ -19,12 +17,17 @@ public class UserCodesService
             .WithAutomaticReconnect()
             .Build();
         
-        _hubConnection.On<string>("SendAdminCode", Console.WriteLine);
+        _hubConnection.On<string>("SendAuthRequest", AuthHandler);
     }
-    
-    private HubConnection _hubConnection;
 
-    private readonly IConfiguration _configuration;
+    private void AuthHandler(string obj)
+    {
+        OnAuthorized?.Invoke(true);
+    }
+
+    private readonly HubConnection _hubConnection;
+
+    public event Action<bool> OnAuthorized;
 
     public async Task SendCode(string code)
     {
@@ -34,5 +37,14 @@ public class UserCodesService
         }
         
         await _hubConnection.InvokeAsync("SendClientCode", code);
+    }
+    
+    public static (string Url, string Code) GenerateUrl()
+    {
+        var code = new Random().Next(10000, 99999).ToString();
+
+        var url = $"http://192.168.224.226:5257/UserCodes?code={code}";
+
+        return (url, code);
     }
 }

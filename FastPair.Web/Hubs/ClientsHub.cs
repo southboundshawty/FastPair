@@ -5,7 +5,7 @@ namespace FastPair.Web.Hubs;
 
 public class ClientsHub : Hub
 {
-    private const int MaxSessionExistTimeMinutes = 15;
+    private const int MaxCodeExistTimeMinutes = 5;
 
     private static readonly ConnectionsList<string> Connections = new();
     
@@ -40,7 +40,7 @@ public class ClientsHub : Hub
 
                 if (code != null)
                 {
-                    connection?.Codes.Add(new ConnectionCode(code, DateTime.Now + TimeSpan.FromSeconds(MaxSessionExistTimeMinutes)));
+                    connection?.Codes.Add(new ConnectionCode(code, DateTime.Now + TimeSpan.FromMinutes(MaxCodeExistTimeMinutes)));
                 }
             }
         }

@@ -12,8 +12,6 @@ builder.Services.AddSignalR();
 
 builder.Services.AddCors();
 
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,7 +36,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapHub<ClientsHub>("/clients");
 });
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.MapControllers();
 

@@ -1,37 +1,70 @@
-﻿@page "/qrcode"
+﻿@page "/"
+
 @using QRCoder
-@using System.Drawing.Imaging
 @using FastPair.Client.Web.Services
-@using SixLabors.ImageSharp
-@using SixLabors.ImageSharp.Formats.Png
-@using System.Data
+@using SixLabors.ImageSharp.Formats.Jpeg
+
 @inject UserCodesService UserCodesService
+@inject NavigationManager NavigationManager
 
-<h3>QrCode</h3>
-
-<img width="128px" height="128px" src="@se"/>
+@if (_isAuthorized)
+{
+    <div>Yes.</div>
+}
+else
+{
+    <div class="flex-wrap">
+        <img width="256px" height="256px" src="@_qrSource" alt=""/>
+        <span>@_code</span>
+    </div>
+}
 
 @code {
-    string se = "";
+    private string _qrSource = string.Empty;
+    private string _code = string.Empty;
+    private bool _isAuthorized;
     
-    protected async override void OnInitialized()
+    protected override void OnAfterRender(bool firstRender)
     {
-        var code = new Random().Next(1111, 9999).ToString();
+        if (firstRender)
+        {
+            UserCodesService.OnAuthorized += UserCodesServiceOnOnAuthorized;
+        }
         
-        using var ms = new MemoryStream();
-        var generator = new QRCodeGenerator();
-        var data = generator.CreateQrCode($"http://192.168.253.226:5258/UserCodes?code={code}", QRCodeGenerator.ECCLevel.H);
-        var t = new QRCode(data);
-        var h = t.GetGraphic(20);
-        await h.SaveAsync(ms, new PngEncoder());
-        
-        se = $"data:image/png;base64,{Convert.ToBase64String(ms.ToArray())}";
-        
-        await UserCodesService.SendCode(code);
+        base.OnAfterRender(firstRender);
+    }
 
-        StateHasChanged();
+    private void UserCodesServiceOnOnAuthorized(bool obj)
+    {
+        if (obj)
+        {
+            NavigationManager.NavigateTo("/hello");
+            
+            return;
+        }   
+        
+        NavigationManager.NavigateTo("/expired");
+    }
+
+    protected override async void OnInitialized()
+    {
+        var url = UserCodesService.GenerateUrl();
+        
+        _code = url.Code;
+        
+        await using var ms = new MemoryStream();
+        var generator = new QRCodeGenerator();
+        
+        var data = generator.CreateQrCode(url.Url, QRCodeGenerator.ECCLevel.M);
+        var qr = new QRCode(data);
+        
+        var image = qr.GetGraphic(20);
+        await image.SaveAsync(ms,new JpegEncoder());
+        
+        _qrSource = $"data:image/png;base64,{Convert.ToBase64String(ms.ToArray())}";
+        
+        await UserCodesService.SendCode(url.Code);
         
         await base.OnInitializedAsync();
     }
-
 }

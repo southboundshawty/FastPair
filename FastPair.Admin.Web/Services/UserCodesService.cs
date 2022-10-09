@@ -7,9 +7,7 @@ public class UserCodesService
 {
     public UserCodesService(IConfiguration configuration)
     {
-        _configuration = configuration;
-
-        var host = _configuration.GetValue<string>("Host");
+        var host = configuration.GetValue<string>("Host");
         
         _hubConnection = new HubConnectionBuilder()
             .WithUrl($"{host}/clients", options => 
@@ -22,9 +20,7 @@ public class UserCodesService
         _hubConnection.On<string>("SendAdminCode", Console.WriteLine);
     }
     
-    private HubConnection _hubConnection;
-
-    private readonly IConfiguration _configuration;
+    private readonly HubConnection _hubConnection;
 
     public async Task SendCode(string code)
     {
