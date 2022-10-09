@@ -11,26 +11,14 @@
     <projectFile profileName="IIS Express">FastPair.Admin.Web/FastPair.Admin.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/Expired.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/Hello.razor" afterDir="false" />
+    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment="all works">
+      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Pages/Index.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Shared/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Shared/SurveyPrompt.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Web/Hubs/ClientsHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Web/Hubs/ClientsHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Web/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Web/TestController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +206,7 @@
       <workItem from="1665239445526" duration="10751000" />
       <workItem from="1665258223797" duration="80000" />
       <workItem from="1665300760697" duration="3702000" />
-      <workItem from="1665307491441" duration="900000" />
+      <workItem from="1665307491441" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665231253044</created>
@@ -248,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665250805805</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="all works">
+      <created>1665308581388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665308581388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,51 +565,24 @@
     <MESSAGE value="add expired dt" />
     <MESSAGE value="1223" />
     <MESSAGE value="fg" />
-    <option name="LAST_COMMIT_MESSAGE" value="fg" />
+    <MESSAGE value="all works" />
+    <option name="LAST_COMMIT_MESSAGE" value="all works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor</url>
-          <line>40</line>
-          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Client.Web\Pages\QrCode.razor" initialLine="40" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor</url>
-          <line>45</line>
-          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Client.Web\Pages\QrCode.razor" initialLine="45" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FastPair.Web/Hubs/ClientsHub.cs</url>
+          <url>file://$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs</url>
           <line>13</line>
-          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Web\Hubs\ClientsHub.cs" initialLine="13" containingFunctionPresentation="method 'SendAdminCode'">
+          <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Client.Web\Services\UserCodesService.cs" initialLine="13" containingFunctionPresentation="constructor 'UserCodesService'">
             <startOffsets>
-              <option value="313" />
+              <option value="359" />
             </startOffsets>
             <endOffsets>
-              <option value="331" />
+              <option value="611" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

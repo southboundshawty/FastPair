@@ -7,7 +7,7 @@ public class UserCodesService
 {
     public UserCodesService(IConfiguration configuration)
     {
-        var host = configuration.GetValue<string>("Host");
+        var host = configuration.GetValue<string>("BackendHost");
         
         _hubConnection = new HubConnectionBuilder()
             .WithUrl($"{host}/clients", options => 
