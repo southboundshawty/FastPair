@@ -34,11 +34,11 @@ else
         base.OnAfterRender(firstRender);
     }
 
-    private void UserCodesServiceOnOnAuthorized(bool obj)
+    private void UserCodesServiceOnOnAuthorized(bool obj, string text)
     {
         if (obj)
         {
-            NavigationManager.NavigateTo("/hello");
+            NavigationManager.NavigateTo($"/hello/{text}");
             
             return;
         }   

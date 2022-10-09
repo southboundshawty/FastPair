@@ -27,12 +27,12 @@ public class UserCodesService
 
     private void AuthHandler(string obj)
     {
-        OnAuthorized?.Invoke(true);
+        OnAuthorized?.Invoke(true, obj);
     }
 
     private readonly HubConnection _hubConnection;
 
-    public event Action<bool> OnAuthorized;
+    public event Action<bool, string> OnAuthorized;
 
     public async Task SendCode(string code)
     {

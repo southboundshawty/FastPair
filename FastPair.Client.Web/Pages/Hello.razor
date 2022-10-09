@@ -1,7 +1,8 @@
-@page "/hello"
+@page "/hello/{Text}"
 
-<h3>Hello</h3>
+<h3>Hello @Text</h3>
 
 @code {
-    
+    [Parameter]
+    public string? Text { get; set; }
 }

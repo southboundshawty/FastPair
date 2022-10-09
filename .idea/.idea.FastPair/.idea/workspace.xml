@@ -11,13 +11,9 @@
     <projectFile profileName="IIS Express">FastPair.Admin.Web/FastPair.Admin.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment="all works">
-      <change afterPath="$PROJECT_DIR$/FastPair.Client.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FastPair/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/Services/UserCodesService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Admin.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Program.cs" afterDir="false" />
+    <list default="true" id="835d9d98-a1fc-4a23-9cd8-ab4780b02ff2" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Pages/Hello.razor" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/Hello.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Pages/QrCode.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +202,7 @@
       <workItem from="1665239445526" duration="10751000" />
       <workItem from="1665258223797" duration="80000" />
       <workItem from="1665300760697" duration="3702000" />
-      <workItem from="1665307491441" duration="1784000" />
+      <workItem from="1665307491441" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665231253044</created>
@@ -243,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665308581388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <created>1665309561796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665309561796</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,20 +569,21 @@
     <MESSAGE value="1223" />
     <MESSAGE value="fg" />
     <MESSAGE value="all works" />
-    <option name="LAST_COMMIT_MESSAGE" value="all works" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/FastPair.Client.Web/Services/UserCodesService.cs</url>
-          <line>13</line>
+          <line>14</line>
           <properties documentPath="C:\Users\steve\OneDrive\Рабочий стол\FastPair\FastPair.Client.Web\Services\UserCodesService.cs" initialLine="13" containingFunctionPresentation="constructor 'UserCodesService'">
             <startOffsets>
-              <option value="359" />
+              <option value="387" />
             </startOffsets>
             <endOffsets>
-              <option value="611" />
+              <option value="639" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="31" />
